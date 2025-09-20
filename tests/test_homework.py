@@ -1,6 +1,6 @@
 """Autograding script."""
 
-import pkl
+import pickle
 
 import pandas as pd  # type: ignore
 from sklearn.metrics import accuracy_score  # type: ignore
