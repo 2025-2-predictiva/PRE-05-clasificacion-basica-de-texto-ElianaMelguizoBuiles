@@ -16,10 +16,10 @@ def test_01():
     )
 
     with open("homework/clf.pkl", "rb") as file:
-        clf = pkl.load(file)
+        clf = pickle.load(file)
 
     with open("homework/vectorizer.pkl", "rb") as file:
-        vectorizer = pkl.load(file)
+        vectorizer = pickle.load(file)
 
     accuracy = accuracy_score(
         y_true=dataframe.target,
