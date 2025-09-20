@@ -1,6 +1,6 @@
 """Autograding script."""
 
-import pickle
+import pkl
 
 import pandas as pd  # type: ignore
 from sklearn.metrics import accuracy_score  # type: ignore
@@ -15,11 +15,11 @@ def test_01():
         compression="zip",
     )
 
-    with open("homework/clf.pickle", "rb") as file:
-        clf = pickle.load(file)
+    with open("homework/clf.pkl", "rb") as file:
+        clf = pkl.load(file)
 
     with open("homework/vectorizer.pkl", "rb") as file:
-        vectorizer = pickle.load(file)
+        vectorizer = pkl.load(file)
 
     accuracy = accuracy_score(
         y_true=dataframe.target,
